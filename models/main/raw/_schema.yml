@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: raw_articles
+    description: "SSG JSON API から取得した記事メタデータ"

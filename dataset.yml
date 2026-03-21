@@ -1,0 +1,10 @@
+title: "Queriaショーケース"
+description: "Queriaショーケースの記事メタデータ（タイトル、概要、タグ等）"
+cover: "📝"
+tags: ["記事", "Queria"]
+public_url: "https://data.queria.io"
+s3_url: "{% if env_var('S3_BUCKET', '') %}s3://{{ env_var('S3_BUCKET') }}{% endif %}"
+
+schemas:
+  main:
+    title: "メイン"

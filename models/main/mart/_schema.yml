@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: mart_articles
+    description: "Queriaショーケース記事のメタデータ"
+    access: public
+    config:
+      meta:
+        published: true
+        title: "Queriaショーケース記事"
+    columns:
+      - name: slug
+        meta:
+          title: 記事のスラグ
+          description: 一意識別子
+      - name: title
+        meta:
+          title: 記事タイトル
+      - name: description
+        meta:
+          title: 記事の概要
+      - name: date
+        meta:
+          title: 公開日
+      - name: datasources
+        meta:
+          title: 使用データソース
+      - name: tags
+        meta:
+          title: タグ
+      - name: search_text
+        meta:
+          title: 検索用テキスト
+          description: タイトル + 概要 + タグの結合

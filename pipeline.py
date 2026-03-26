@@ -7,7 +7,7 @@ import urllib.request
 from pathlib import Path
 
 from dbt.cli.main import dbtRunner
-from fdl import DIST_DIR
+from fdl import FDL_DIR
 
 
 def main():
@@ -50,7 +50,7 @@ def _ingest() -> None:
 
     rows = body["result"][0]["results"]
 
-    db_path = DIST_DIR / "d1.db"
+    db_path = FDL_DIR / "d1.db"
     conn = sqlite3.connect(db_path)
     conn.execute("DROP TABLE IF EXISTS articles")
     conn.execute("""

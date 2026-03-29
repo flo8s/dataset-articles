@@ -18,7 +18,7 @@ articles:
         s3_endpoint: "{{ env_var('FDL_S3_ENDPOINT_HOST', '') }}"
         s3_region: auto
       attach:
-        - path: "{{ env_var('FDL_ATTACH_PATH') }}"
+        - path: "ducklake:{{ env_var('FDL_CATALOG') }}"
           alias: articles
           is_ducklake: true
           options:

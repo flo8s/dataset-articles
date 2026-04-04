@@ -25,6 +25,8 @@ jobs:
       CF_D1_DATABASE_ID: ${{ secrets.CF_D1_DATABASE_ID }}
     steps:
       - uses: actions/checkout@v5
+        with:
+          submodules: true
 
       - uses: astral-sh/setup-uv@v7
         with:
@@ -41,7 +43,7 @@ jobs:
         run: uv run fdl run default -- python main.py
 
       - name: Upload artifacts
-        run: uv run python scripts/upload_artifacts.py
+        run: uv run python shared/scripts/upload_artifacts.py
 
       - name: Push catalog
         run: uv run fdl push default

@@ -1,4 +1,5 @@
 name = "articles"
+command = "python main.py"
 
 [meta]
 title = "Queriaショーケース"

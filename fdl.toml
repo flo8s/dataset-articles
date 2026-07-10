@@ -6,7 +6,7 @@ title = "Queriaショーケース"
 description = "Queriaショーケースの記事メタデータ（タイトル、概要、タグ等）"
 cover = "📝"
 tags = ['記事', 'Queria']
-repository_url = "https://github.com/flo8s/dataset-articles"
+repository_url = "https://github.com/queria-io/dataset-articles"
 
 [meta.schemas]
 [meta.schemas.main]

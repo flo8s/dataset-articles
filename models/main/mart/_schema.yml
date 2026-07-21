@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: mart_articles
-    description: "Queriaショーケース記事のメタデータ"
+    description: "Queria のショーケース記事（オープンデータ分析記事）のメタデータ一覧。各記事のスラッグ、タイトル、説明、公開日、参照データソース、タグを収録し、記事の検索に利用する。"
     access: public
     config:
       meta:

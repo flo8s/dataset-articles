@@ -1,0 +1,22 @@
+schema: main
+name: mart_articles
+title: Queriaショーケース記事
+description: Queria のショーケース記事（オープンデータ分析記事）のメタデータ一覧。各記事のスラッグ、タイトル、説明、公開日、参照データソース、タグを収録し、記事の検索に利用する。
+published: true
+fields:
+  - name: slug
+    title: 記事のスラグ
+    description: 一意識別子
+  - name: title
+    title: 記事タイトル
+  - name: description
+    title: 記事の概要
+  - name: date
+    title: 公開日
+  - name: datasources
+    title: 使用データソース
+  - name: tags
+    title: タグ
+  - name: search_text
+    title: 検索用テキスト
+    description: タイトル + 概要 + タグの結合

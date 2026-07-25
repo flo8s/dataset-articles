@@ -1,0 +1,17 @@
+schema: main
+name: raw_articles
+description: SSG JSON API から取得した記事メタデータ
+published: false
+fields:
+  - name: slug
+    title: 記事のスラグ
+  - name: title
+    title: 記事タイトル
+  - name: description
+    title: 記事の概要
+  - name: date
+    title: 公開日
+  - name: datasources
+    title: 使用データソース
+  - name: tags
+    title: タグ

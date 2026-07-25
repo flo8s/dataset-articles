@@ -1,0 +1,44 @@
+spec_version: "0.1"
+name: articles
+title: Queriaショーケース
+description: Queriaショーケースの記事メタデータ（タイトル、概要、タグ等）
+keywords:
+  - 記事
+  - Queria
+homepage: https://github.com/queria-io/dataset-articles
+language: ja
+
+licenses:
+  - CC-BY-4.0
+
+sources:
+  - title: Queria ショーケース
+    path: https://queria.io/showcase
+
+contributors:
+  - title: Queria
+    path: https://queria.io/
+    roles: [author, rightsHolder]
+
+temporal_coverage: { start: "2025-02-14", end: null }
+spatial_coverage: [JP]
+update_frequency: weekly
+cover: 📝
+
+ai_context:
+  instructions: |
+    Queria のショーケース記事（オープンデータの分析記事）を探すのに使う。
+    記事そのものではなくメタデータで、本文は含まない。1行が1記事で、現在88本。
+    datasources 列に記事が使ったデータセット名が入るので、
+    「このデータセットを使った記事」を引ける。
+    これは Queria 自身が書いたコンテンツで、外部の公的データではない。
+    分析の材料ではなく、他のデータセットの使い方を探す入口として使う。
+  synonyms: [ショーケース, 記事, 分析事例, Queria]
+  examples:
+    - このデータセットを使った記事はある？
+    - 人口に関する分析記事を探したい
+    - 最近公開された記事を一覧したい
+
+schemas:
+  - name: main
+    title: メイン

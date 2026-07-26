@@ -8,7 +8,7 @@ from pathlib import Path
 
 from dbt.cli.main import dbtRunner
 
-#: ビルドの作業ディレクトリ。fdl が持っていた定数を自分で持つ
+#: ビルドの作業ディレクトリ。queria がカタログを置くのと同じ場所
 WORK_DIR = Path(".queria")
 
 

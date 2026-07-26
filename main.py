@@ -7,7 +7,9 @@ import urllib.request
 from pathlib import Path
 
 from dbt.cli.main import dbtRunner
-from fdl import FDL_DIR
+
+#: ビルドの作業ディレクトリ。fdl が持っていた定数を自分で持つ
+WORK_DIR = Path(".queria")
 
 
 def main():
@@ -50,7 +52,7 @@ def _ingest() -> None:
 
     rows = body["result"][0]["results"]
 
-    db_path = FDL_DIR / "d1.db"
+    db_path = WORK_DIR / "d1.db"
     conn = sqlite3.connect(db_path)
     conn.execute("DROP TABLE IF EXISTS articles")
     conn.execute("""
